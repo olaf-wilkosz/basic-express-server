@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/olaf-wilkosz/basic-express-server/issues"
   },
-  "homepage": "https://github.com/olaf-wilkosz/basic-express-server#readme"
+  "homepage": "https://github.com/olaf-wilkosz/basic-express-server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
