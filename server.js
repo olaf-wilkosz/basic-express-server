@@ -26,6 +26,10 @@ app.get('/about', (req, res) => {
   res.show('about.html');
 });
 
+app.get('/404.jpg', (req, res) => {	
+  res.sendFile(path.join(__dirname, '/public/404.jpg'));	
+});
+
 app.use((req, res) => {
   res.status(404).show('404.html');
 });
