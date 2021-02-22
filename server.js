@@ -15,7 +15,7 @@ app.use('/user/', (req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('<p>In the task it was not stated where should we point `/` so I just want point it at anything :)<p>');
+  res.show('home.html');
 });
 
 app.get('/home', (req, res) => {
