@@ -10,6 +10,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use('/user/', (req, res, next) => {
+  res.show('forbidden.html');
+});
+
 app.get('/', (req, res) => {
   res.send('<p>In the task it was not stated where should we point `/` so I just want point it at anything :)<p>');
 });
